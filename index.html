@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Regulus</title>
 </head>
@@ -29,40 +30,100 @@
             </nav>
         </div>
         <div id="options">
-            <a href="./">Câmeras</a>
-            <a href="">Mais Vendidos</a>
-            <a href="">Smartphones</a>
-            <a href="">Acessórios</a>
-            <a href="">Desktops</a>
-            <a href="">Ideias para Presente</a>
-            <a href="">Ofertas do Dia</a>
+            <a href="" class="opt">Câmeras</a>
+            <a href="" class="opt">Mais Vendidos</a>
+            <a href="" class="opt">Smartphones</a>
+            <a href="" class="opt">Acessórios</a>
+            <a href="" class="opt">Desktops</a>
+            <a href="" class="opt">Ideias para Presente</a>
+            <a href="" class="opt">Ofertas do Dia</a>
         </div>
     </header>
     <main>
-        <div id="carrossel">
-            <img src="./src/img/poster.png" alt="" id="poster01">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./src/img/hogwarts-castle-01.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hogwarts</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ab ut, molestiae neque nobis quam quis, mollitia quia iste dolor recusandae totam autem sequi accusamus obcaecati necessitatibus. Magnam, suscipit dolorum.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./src/img/rengoku e uzui.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Rengoku e Uzui (bem estravagantezinho)</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae at esse molestias eligendi consequatur aliquam ea, voluptatibus deleniti facere iusto optio nobis unde soluta cumque, dolores laborum velit quis.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./src/img/roy.png" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Roy Mustang</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit alias odit aspernatur rem, ipsum amet itaque, qui, iusto at blanditiis rerum neque ipsa esse sed deserunt cupiditate quis animi voluptatem.</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
         </div>
-        <div id="categorias">
-            <div id="coluna01">
-                <div>
-                    <img src="./src/img/iphone.png" alt="">
-                    <div class="vidro">
-                        <a href="">Iphones</a>
+
+        <div id="categ">
+            <div class="column">
+                <div class="categs">
+                    <img src="./" alt="">
+                    <div>
+                        <a>Iphones</a>
                     </div>
                 </div>
-                
             </div>
-            <div id="coluna02">
-                
+            <div class="column">
+                <div class="categs">
+                    <img src="./" alt="">
+                    <div>
+                        <a>Notebooks</a>
+                    </div>
+                </div>
+                <div class="categs">
+                    <img src="./" alt="">
+                    <div>
+                        <a>Smartphones</a>
+                    </div>
+                </div>
             </div>
-            <div id="coluna03">
-                
+            <div class="column">
+                <div class="categs">
+                    <img src="./" alt="">
+                    <div>
+                        <a>Câmeras</a>
+                    </div>
+                </div>
+                <div class="categs">
+                    <img src="./" alt="">
+                    <div>
+                        <a>Computadores</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>
