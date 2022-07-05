@@ -56,3 +56,34 @@ img{
     border: 1px solid red;
     width: 80%;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#categ{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid purple;
+}
+.column{
+    border: 1px solid blue;
+}
+.categs{
+    margin: 10px;
+    border: 1px solid red;
+}
+#categ-iphone{
+    width: 200px;
+    height: 435px;
+}
+.img-categ{
+    height: 200px;
+    width: 200px;
+}
+.layer-glass{
+    height: 40px;
+    background: linear-gradient(180deg, rgba(75, 26, 130, 0.675) 0%, rgba(168, 4, 193, 0.75) 50%);
+    backdrop-filter: blur(2px);
+}
